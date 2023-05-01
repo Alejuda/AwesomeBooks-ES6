@@ -14,7 +14,7 @@ const renderBooks = (books) => {
         <div class="book-card ${odd}">
           <h2 class="book-title">"${book.title}"</h2>
           <p class="book-author">By ${book.author}</p>
-          <button class="remove-btn" id="remove-btn" onclick="books.removeBook(${book.id}), renderBooks()">Remove</button>
+          <button class="remove-btn" id="remove-btn" onclick="removeBook(${book.id})">Remove</button>
         </div>
         `;
     });

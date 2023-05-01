@@ -1,4 +1,5 @@
 import renderBooks from "./renderBooks.js";
+import books from "../index.js";
 export default class BookList extends Array {
   addBook(newBook) {
     this.push(newBook);
