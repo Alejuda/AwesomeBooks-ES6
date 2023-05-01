@@ -16,6 +16,7 @@
       "eol-last": "off",
       "no-use-before-define": "off",
       "max-classes-per-file": "off",
+      "import/no-cycle": "off",
       "no-unused-vars": "off",
       "import/extensions": [ 1, {
         "js": "always", "json": "always"
