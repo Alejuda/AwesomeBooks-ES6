@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header-container">
+      <h1 class="header title">Awesome Books</h1>
+      <nav class="header-navigation">
+        <ul class="link-list">
+          <li class="list-item">
+            <a class="nav-link active" id="list-link" href="#">List</a>
+          </li>
+          <li class="list-item">
+            <a class="nav-link" id="add-link" href="#">Add New</a>
+          </li>
+          <li class="list-item">
+            <a class="nav-link" id="contact-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <p class="date" id="today-date"></p>
+    <section class="section-container">
+      <h1 class="section-title" id="section-title">All Awesome Books</h1>
+      <div id="books-container" class="books-container show"></div>
+      <form id="form" class="form-container">
+        <input
+          type="text"
+          placeholder="Name"
+          id="name"
+          class="name input-control"
+          required
+        />
+        <input
+          type="text"
+          placeholder="Author"
+          id="description"
+          class="description input-control"
+        />
+        <button type="submit" class="input-control add-button">Add</button>
+      </form>
+      <div class="contact-section" id="contact-container">
+        <p class="contact-text">
+          Do you have any questions or you just want to say "Hello"?
+        </p>
+        <p class="contact-text">You can reach out to us!</p>
+        <br />
+        <ul>
+          <li class="contact-text list-text">Our e-mail: mail@mail.com</li>
+          <li class="contact-text list-text">
+            Our phone number: +12 3456 7890
+          </li>
+          <li class="contact-text list-text">
+            Our adress: Streatname 22 City, Country
+          </li>
+        </ul>
+      </div>
+    </section>
+    <footer class="footer-container">
+      <p class="copyright">
+        copyright © 2023 - Developed by
+        <a class="footer-link" href="https://github.com/Alejuda"
+          >Ignacio Fino</a
+        >
+      </p>
+    </footer>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
