@@ -7,6 +7,7 @@ import {
   listLinkClick,
 } from "./modules/navLinks.js";
 import setBooks from "./modules/setBooks.js";
+import updateDate from "./modules/dateNow.js";
 
 const form = document.getElementById("form");
 const listLink = document.getElementById("list-link");
@@ -27,5 +28,7 @@ form.addEventListener("submit", addForm);
 listLink.addEventListener("click", listLinkClick);
 addLink.addEventListener("click", addLinkClick);
 contactLink.addEventListener("click", contactLinkClick);
+
+setInterval(updateDate(), 60000);
 
 export default books;
