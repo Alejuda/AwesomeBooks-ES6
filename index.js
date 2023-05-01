@@ -29,6 +29,6 @@ listLink.addEventListener("click", listLinkClick);
 addLink.addEventListener("click", addLinkClick);
 contactLink.addEventListener("click", contactLinkClick);
 
-setInterval(updateDate(), 60000);
+setInterval(updateDate, 1000);
 
 export default books;

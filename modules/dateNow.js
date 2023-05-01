@@ -1,8 +1,9 @@
 import { DateTime } from '../node_modules/luxon/src/luxon.js';
 const dateNow = document.getElementById("today-date");
+let date = '';
 
 const updateDate = () => {
-  const date = DateTime.now().toLocaleString(DateTime.DATETIME_MED);
+  date = DateTime.now().toLocaleString(DateTime.DATETIME_MED_WITH_SECONDS);
   dateNow.innerText = date;
 };
 
